@@ -6,4 +6,61 @@
 
 body {
     font-family: sans-serif;
+    z-index: 3;
+    background: linear-gradient(rgba(0, 100, 255, 0.4153011546), rgba(0, 100, 255, 0.4153011546)), url(programmers-office.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+    color: #fff;
+}
+
+header h1#title {
+    margin-bottom: 1rem;
+}
+
+header p#description {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+#survey-form {
+    background-color: rgba(43, 43, 74, 0.9);
+    border-radius: 5px;
+}
+
+#survey-form .form-group {
+    padding: .8rem 0;
+}
+
+#survey-form label {
+    font-size: 1.5rem;
+}
+
+#survey-form input[type='radio'], #survey-form input[type='checkbox'] {
+    transform: scale(2);
+}
+
+#survey-form .form-check {
+    display: flex;
+    align-items: center;
+}
+
+#survey-form .form-check-label {
+    margin-left: 1rem;
+}
+
+#survey-form .form-check-input {
+    margin-top: 0;
+}
+
+#survey-form textarea{
+    font-size: 1.5rem;
 }

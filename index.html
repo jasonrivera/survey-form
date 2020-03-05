@@ -3,10 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Survey Form</title>
 </head>
 <body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <div class="container mb-5" id="main">
+        <form id="survey-form" class="p-5">
+            <div class="form-group">
+                <label for="name" class="text-white">Name</label>
+                <input type="email" class="form-control form-control-lg" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-white">Email</label>
+                <input type="email" class="form-control form-control-lg" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="age" class="text-white">Age (optional)</label>
+                <input type="number" class="form-control form-control-lg" id="age" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label for="current-role" class="text-white">Which option best describes your current role?</label>
+                <select class="form-control form-control-lg" id="roles">
+                <option selected>Select current role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="recommend" class="text-white">Would you recommend freeCodeCap to a friend?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="recommend" id="definitely" value="definitely" checked>
+                    <label class="form-check-label text-white" for="definitely">
+                        Definitely
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="recommend" id="maybe" value="maybe">
+                    <label class="form-check-label text-white" for="maybe">
+                        Maybe
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="recommend" id="notSure" value="notSure">
+                    <label class="form-check-label text-white" for="notSure">
+                        Not sure
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="recommend" class="text-white">What would you like to see improved? (Check all that apply)</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label text-white" for="defaultCheck1">
+                        Front-end Projects
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label text-white" for="defaultCheck2">
+                        Back-end-Projects
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label text-white" for="defaultCheck1">
+                        Data Visualization
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label text-white" for="defaultCheck2">
+                        Challenges
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label text-white" for="defaultCheck1">
+                        Open Source Community
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label text-white" for="defaultCheck2">
+                        Gitter help rooms
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label text-white" for="defaultCheck1">
+                        Videos
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label text-white" for="defaultCheck2">
+                        City Meetups
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label text-white" for="defaultCheck2">
+                        Wiki
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label text-white" for="defaultCheck1">
+                        Forum
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label text-white" for="defaultCheck2">
+                        Additional Courses
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments" class="text-white">Any comments or suggestions?</label>
+                <textarea class="form-control" id="comments" rows="6" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <button type="button" class="btn btn-success btn-lg btn-block p-3">Submit</button>
+    </form>
+    </div>
     
 </body>
 </html>
